@@ -1,3 +1,4 @@
+import video1 from "../assets/video1.mp4";
 const HeroSection = () => {
   return (
     <div className="flex flex-col items-center mt-6 lg:mt-20">
@@ -29,13 +30,16 @@ const HeroSection = () => {
         </a>
       </div>
       <div className="flex mt-10 justify-center">
-        <iframe
-          src="https://drive.google.com/file/d/1h8GNnp5SHYlFwsB7f9PK2LoznvHWkhpu/preview"
-          width="640"
-          height="480"
-          allow="autoplay"
-          className="rounded-lg border border-orange-700 shadow-sm shadow-orange-400 mx-2 my-4"
-        ></iframe>
+       <div className="flex mt-10 justify-center">
+        <video
+          autoPlay
+          loop
+          muted
+          className="rounded-lg w-1/2 border border-orange-700 shadow-sm shadow-orange-400 mx-2 my-4"
+        >
+          <source src={video1} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
     </div>
   );
