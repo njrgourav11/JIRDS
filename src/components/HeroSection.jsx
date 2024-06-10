@@ -1,4 +1,5 @@
-import video1 from "../assets/video1.mp4";
+import video1 from "../assets/ai.mp4"; // Make sure the path is correct
+
 const HeroSection = () => {
   return (
     <div className="flex flex-col items-center mt-6 lg:mt-20">
@@ -30,7 +31,6 @@ const HeroSection = () => {
         </a>
       </div>
       <div className="flex mt-10 justify-center">
-       <div className="flex mt-10 justify-center">
         <video
           autoPlay
           loop
