@@ -1,5 +1,3 @@
-import video1 from "../assets/ai.mp4"; // Make sure the path is correct
-
 const HeroSection = () => {
   return (
     <div className="flex flex-col items-center mt-6 lg:mt-20">
@@ -37,7 +35,7 @@ const HeroSection = () => {
           muted
           className="rounded-lg w-1/2 border border-orange-700 shadow-sm shadow-orange-400 mx-2 my-4"
         >
-          <source src={video1} type="video/mp4" />
+          <source src="/ai.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
