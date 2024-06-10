@@ -33,7 +33,7 @@ const Section = () => {
                 </span>
             </h2>
 
-            <section className="dark:bg-gray-900">
+            <section className="">
                 <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
                     <div className="font-light text-gray-500 sm:text-lg dark:text-gray-400 text-left">
                         <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-orange-900 dark:text-white">
@@ -115,11 +115,11 @@ const Section = () => {
                 </div>
             </section>
 
-            <section className="bg-gray-100 dark:bg-gray-800 py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 mt-12">
-                <h2 className="text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white mb-8">
-                    Book a Consultation
-                </h2>
-                <div className="grid lg:grid-cols-3 items-center gap-4 p-2 shadow-[0_2px_10px_-3px_rgba(60,81,237,13)] rounded-lg mt-8">
+            <section className="bg-orange py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 mt-12">
+      <h2 className="text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white mb-8">
+        Book a Consultation
+      </h2>
+      <div className="grid lg:grid-cols-3 items-center gap-4 p-2 shadow-[0_2px_10px_-3px_rgba(60,81,237,13)] rounded-lg mt-8">
         <div className="bg-[#011c2b] rounded-lg p-6 max-lg:text-center">
           <h2 className="text-xl font-bold text-white">Contact Information</h2>
           <p className="text-sm text-gray-400 mt-3">

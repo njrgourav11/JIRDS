@@ -21,22 +21,22 @@ const ContactSection = () => {
   
 
   return (
-<div className="text-center">
-      <h2 className="text-3xl mb-20 sm:text-5xl lg:text-6xl mt-10 lg:mt-20 tracking-wide">
-        Contact{" "}
-        <span className="bg-gradient-to-r from-blue-500 to-cyan-800 text-transparent bg-clip-text">
-          Us
-        </span>
-      </h2>
-      
-              <p className="text-sm text-gray-900 mt-3">
-          Do You Have Any Queries or want too book our services?
+      <div className="text-center">
+        <h2 className="text-3xl mb-20 sm:text-5xl lg:text-6xl mt-10 lg:mt-20 tracking-wide">
+          Contact{" "}
+          <span className="bg-gradient-to-r from-blue-500 to-cyan-800 text-transparent bg-clip-text">
+            Us
+          </span>
+        </h2>
+  
+        <p className="text-sm text-gray-900 mt-3">
+          Do You Have Any Queries or want to book our services?
         </p>
-     
-      <div className="grid lg:grid-cols-3 items-center gap-4 p-2 shadow-[0_2px_10px_-3px_rgba(70,81,200,28)] rounded-lg mt-8">
-        <div className="bg-[#011c2b] rounded-lg p-6 max-lg:text-center">
-          <h2 className="text-xl font-bold text-white">Contact Information</h2>
-          <p className="text-sm text-gray-400 mt-3">
+  
+        <div className="grid lg:grid-cols-3 items-center gap-4 p-2 shadow-[0_2px_10px_-3px_rgba(70,81,200,28)] rounded-lg mt-8">
+          <div className="bg-[#011c2b] rounded-lg p-6 max-lg:text-center">
+            <h2 className="text-xl font-bold text-white">Contact Information</h2>
+            <p className="text-sm text-gray-400 mt-3">
             Want to book our services? 
             <br />
             Give us a call or fill out the form.
