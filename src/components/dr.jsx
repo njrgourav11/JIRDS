@@ -7,6 +7,14 @@ import Img4 from '../assets/dr/ok4.jpg';
 import Img5 from '../assets/dr/ok5.jpg';
 import Img6 from '../assets/dr/ok6.jpg';
 import Img7 from '../assets/dr/ok7.jpg';
+import Img8 from '../assets/dr/ok8.jpg';
+import Img9 from '../assets/dr/ok9.jpg';
+import Img10 from '../assets/dr/ok10.jpg';
+import Img11 from '../assets/dr/ok11.jpg';
+import Img12 from '../assets/dr/ok12.jpg';
+import Img13 from '../assets/dr/ok13.jpg';
+import Img14 from '../assets/dr/ok14.jpg';
+import Img15 from '../assets/dr/ok15.jpg';
 
 const Section = () => {
     const form = useRef();
@@ -103,15 +111,21 @@ const Section = () => {
                         </p>
                     </div>
                     <div className="grid grid-cols-2 gap-4 mt-0">
-                        <img className="w-full rounded-lg" src={Img1} alt="office content 1" />
-                        <img className="mt-4 w-full lg:mt-10 rounded-lg" src={Img2} alt="office content 2" />
-                        <img className="w-full rounded-lg" src={Img3} alt="office content 1" />
-                        <img className="mt-4 w-full lg:mt-10 rounded-lg" src={Img4} alt="office content 2" />
-                        <img className="w-full rounded-lg" src={Img5} alt="office content 1" />
-                        <img className="mt-4 w-full lg:mt-10 rounded-lg" src={Img6} alt="office content 2" />
-                        <img className="w-full rounded-lg" src={Img7} alt="office content 1" />
-                        <img className="mt-4 w-full lg:mt-10 rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-1.png" alt="office content 2" />
-                    </div>
+    <img className="w-full h-[200px] object-cover rounded-lg" src={Img1} alt="office content 1" />
+    <img className="w-full h-[200px] object-cover mt-4 lg:mt-10 rounded-lg" src={Img2} alt="office content 2" />
+    <img className="w-full h-[200px] object-cover rounded-lg" src={Img3} alt="office content 3" />
+    <img className="w-full h-[200px] object-cover mt-4 lg:mt-10 rounded-lg" src={Img4} alt="office content 4" />
+    <img className="w-full h-[200px] object-cover rounded-lg" src={Img5} alt="office content 5" />
+    <img className="w-full h-[200px] object-cover mt-4 lg:mt-10 rounded-lg" src={Img6} alt="office content 6" />
+    <img className="w-full h-[200px] object-cover rounded-lg" src={Img7} alt="office content 7" />
+    <img className="w-full h-[200px] object-cover rounded-lg" src={Img8} alt="office content 8" />
+    <img className="w-full h-[200px] object-cover rounded-lg" src={Img9} alt="office content 9" />
+    <img className="w-full h-[200px] object-cover rounded-lg" src={Img10} alt="office content 10" />
+    <img className="w-full h-[200px] object-cover rounded-lg" src={Img15} alt="office content 11" />
+    <img className="w-full h-[200px] object-cover rounded-lg" src={Img12} alt="office content 12" />
+    <img className="w-full h-[200px] object-cover rounded-lg" src={Img13} alt="office content 13" />
+    <img className="w-full h-[200px] object-cover rounded-lg" src={Img14} alt="office content 13" />
+  </div>
                 </div>
             </section>
 
