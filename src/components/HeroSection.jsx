@@ -28,7 +28,7 @@ const HeroSection = () => {
           Brochure
         </a>
       </div>
-      <div className="flex mt-10 justify-center">
+      {/* <div className="flex mt-10 justify-center">
         <video
           autoPlay
           loop
@@ -38,7 +38,7 @@ const HeroSection = () => {
           <source src="/ai.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-      </div>
+      </div> */}
     </div>
   );
 };
