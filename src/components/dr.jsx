@@ -118,13 +118,13 @@ const Section = () => {
     <img className="w-full h-[200px] object-cover rounded-lg" src={Img5} alt="office content 5" />
     <img className="w-full h-[200px] object-cover mt-4 lg:mt-10 rounded-lg" src={Img6} alt="office content 6" />
     <img className="w-full h-[200px] object-cover rounded-lg" src={Img7} alt="office content 7" />
-    <img className="w-full h-[200px] object-cover rounded-lg" src={Img8} alt="office content 8" />
+    <img className="w-full h-[200px] object-cover mt-4 lg:mt-10 rounded-lg" src={Img8} alt="office content 8" />
     <img className="w-full h-[200px] object-cover rounded-lg" src={Img9} alt="office content 9" />
-    <img className="w-full h-[200px] object-cover rounded-lg" src={Img10} alt="office content 10" />
+    <img className="w-full h-[200px] object-cover mt-4 lg:mt-10 rounded-lg" src={Img10} alt="office content 10" />
     <img className="w-full h-[200px] object-cover rounded-lg" src={Img15} alt="office content 11" />
-    <img className="w-full h-[200px] object-cover rounded-lg" src={Img12} alt="office content 12" />
+    <img className="w-full h-[200px] object-cover mt-4 lg:mt-10 rounded-lg" src={Img12} alt="office content 12" />
     <img className="w-full h-[200px] object-cover rounded-lg" src={Img13} alt="office content 13" />
-    <img className="w-full h-[200px] object-cover rounded-lg" src={Img14} alt="office content 13" />
+    <img className="w-full h-[200px] object-cover mt-4 lg:mt-10 rounded-lg" src={Img14} alt="office content 13" />
   </div>
                 </div>
             </section>
