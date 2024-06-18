@@ -9,9 +9,9 @@ const FeatureSection = () => {
          Our Services
         </span>
         <h2 className="text-3xl sm:text-5xl lg:text-6xl mt-10 lg:mt-20 tracking-wide">
-          We Offer{" "}
+          Services {" "}
           <span className="bg-gradient-to-r from-blue-500 to-cyan-800 text-transparent bg-clip-text">
-            All These Services
+            Offerred
           </span>
         </h2>
       </div>

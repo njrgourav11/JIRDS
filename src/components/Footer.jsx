@@ -20,7 +20,7 @@ export const Footer = () => {
             <div className="mt-6 lg:max-w-sm">
               <p className="text-sm text-black">
                 JIRDS is a Comprehensive
-                multi service place that provides educational, Therapeutic
+                multi service place that provides educational, therapeutic
                 and recreational services for children with special needs for
                 fostering their physical, educational, emotional and social
                 development and thus enabling them to play, learn, live and
@@ -29,10 +29,10 @@ export const Footer = () => {
               </p>
               <p className="mt-4 text-sm text-black">
                 Our objective is to provide quality education, functional skill
-                programme that will child or that will enable the child
+                programme that will enable the children
                 to realize their optimal potential in academics, development
                 of various skills socio - emotional functions and independent
-                livin
+                living.
               </p>
             </div>
           </div>

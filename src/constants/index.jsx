@@ -71,7 +71,7 @@ export const features = [
     icon: <Stethoscope />,
     text: "Speech, Physio & Occupational therapy",
     description:
-      "Offers comprehensive therapy services encompassing speech, physiotherapy, and occupational therapy to support individuals' physical , speech,functional  and cognitive development.",
+      "Offer comprehensive therapy services encompassing speech, physiotherapy, and occupational therapy to support individuals' physical , speech,functional  and cognitive development.",
   },
   {
     icon: <BookOpenCheck />,
@@ -102,13 +102,13 @@ export const features = [
     icon: <Handshake />,
     text: "Family Sensitive & friendly ambience",
     description:
-      "Create an environment that is welcoming, supportive, and family-friendly.Ensure that families feel comfortable and actively involved in their child’s development.",
+      "Create an environment that is welcoming, supportive, and family-friendly & ensure that families feel comfortable and actively involved in their child’s development.",
   },
   {
     icon: <Cone />,
     text: "Fun, Safe, resource enriched environment",
     description:
-      "Design learning spaces that are engaging, safe, and filled with age-appropriate resources.Encourage exploration, creativity, and social interaction.",
+      "Design learning spaces that are engaging, safe, and filled with age-appropriate resources that encourage exploration, creativity, and social interaction.",
   },
   {
     icon: <Users />,
