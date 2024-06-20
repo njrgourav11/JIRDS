@@ -55,12 +55,12 @@ export const Footer = () => {
             <div className="flex">
               <p className="mr-1 text-black">Phone:</p>
               <a
-                href="tel:+91 9948199921"
+                href="tel:+91 9948199920"
                 aria-label="Our phone"
                 title="Our phone"
                 className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
               >
-               <u> 9948199921 </u>
+               <u> 9948199920,21 </u>
               </a>
             </div>
             <div className="flex">
