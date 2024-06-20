@@ -157,7 +157,7 @@ export const Footer = () => {
                   <div class="absolute top-full left-0 w-full h-full rounded-full bg-gradient-to-bl from-purple-500 via-pink-500 to-yellow-500 z-0 transition-all duration-500 group-hover:top-0"></div>
                 </button>
               </a>
-              <a href="">
+              <a href="https://api.whatsapp.com/message/RGMKZ437PAQEE1?autoload=1&app_absent=0">
               <button class="w-10 h-10 flex items-center relative overflow-hidden justify-center rounded-full bg-white shadow-md shadow-gray-200 group transition-all duration-300">
       <svg class="fill-gray-900 relative z-10 transition-all duration-300 group-hover:fill-white" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 71 72" fill="none">
       <path
