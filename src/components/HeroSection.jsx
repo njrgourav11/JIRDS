@@ -1,3 +1,5 @@
+import React from 'react';
+
 const HeroSection = () => {
   return (
     <div className="flex flex-col items-center mt-6 lg:mt-20">
@@ -28,17 +30,13 @@ const HeroSection = () => {
           Brochure
         </a>
       </div>
-      {/* <div className="flex mt-10 justify-center">
-        <video
-          autoPlay
-          loop
-          muted
-          className="rounded-lg w-1/2 border border-orange-700 shadow-sm shadow-orange-400 mx-2 my-4"
-        >
+      <div className="flex mt-10 justify-center">
+        <video width="320" height="240" loop autoPlay muted className="rounded-lg border border-orange-700 shadow-sm shadow-orange-400 mx-2 my-4">
           <source src="/ai.mp4" type="video/mp4" />
+          <source src="/ai.ogg" type="video/ogg" />
           Your browser does not support the video tag.
         </video>
-      </div> */}
+      </div>
     </div>
   );
 };
