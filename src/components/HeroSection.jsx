@@ -32,8 +32,7 @@ const HeroSection = () => {
       </div>
       <div className="flex mt-10 justify-center">
         <video width="320" height="240" loop autoPlay muted className="rounded-lg border border-orange-700 shadow-sm shadow-orange-400 mx-2 my-4">
-          <source src="/ai.mp4" type="video/mp4" />
-          <source src="/ai.ogg" type="video/ogg" />
+          <source src="https://drive.google.com/uc?id=1h8GNnp5SHYlFwsB7f9PK2LoznvHWkhpu" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
