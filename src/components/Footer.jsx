@@ -44,7 +44,7 @@ export const Footer = () => {
             <div className="flex">
               <p className="mr-1 text-black">Pay here:</p>
               <a
-                href="https://rzp.io/l/janani"
+                href="payment"
                 aria-label="Payment"
                 title="Payment Page"
                 className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
