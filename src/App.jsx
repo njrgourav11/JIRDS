@@ -13,6 +13,7 @@ import Gallery from "./components/gallery";
 import Events from "./components/events";
 import About from "./components/about";
 import Dr from "./components/dr";
+import Pay from "./components/payment";
 
 const App = () => {
   return (
@@ -31,6 +32,7 @@ const App = () => {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/events" element={<Events />} />
           <Route path="/dr-anuradha" element={<Dr />} />
+          <Route path="/payment" element={<Pay />} />
         </Routes>
       </div>
       <Footer />
