@@ -1,40 +1,40 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
-const VimeoVideo = () => {
-  const [videoExists, setVideoExists] = useState(true); // Assume video exists by default
-
-  useEffect(() => {
-    // Load Vimeo Player API script dynamically
-    const script = document.createElement('script');
-    script.src = 'https://player.vimeo.com/api/player.js';
-    script.async = true;
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
-
-  const handleLoadError = () => {
-    setVideoExists(false); // Set videoExists to false if load error occurs
-  };
-
+const HeroSection = () => {
   return (
-    <div style={{ padding: '75% 0 0 0', position: 'relative' }}>
-      {videoExists ? (
-        <iframe
-          src="https://player.vimeo.com/video/966384364?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-          frameBorder="0"
-          allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-          style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%' }}
-          title="Vimeo Video"
-          onError={handleLoadError}
-        ></iframe>
-      ) : (
-        <p>Sorry, This video does not exist.</p>
-      )}
+    <div className="flex flex-col items-center mt-6 lg:mt-20">
+      <h1 className="text-orange-800 text-4xl sm:text-6xl lg:text-7xl text-center tracking-wide">
+        JIRDS
+        <span className="bg-gradient-to-r from-blue-500 to-cyan-800 text-transparent bg-clip-text">
+          {" "} <br />
+          Janani Institute For Research & Rehabilitation Development Society
+        </span>
+      </h1>
+      <p className="mt-10 text-lg text-center text-amber-800 max-w-4xl">
+        Janani Child Development Center is a comprehensive
+        multi-service place that provides educational, therapeutic, 
+        and recreational services for children with special needs for 
+        fostering their physical, educational, emotional, and social
+        development and thus enabling them to play, learn, live and 
+        function in the real world by encouraging them to realize 
+        their true potential.
+      </p>
+      <div className="flex justify-center my-10">
+        <a
+          href="/services"
+          className="bg-gradient-to-r from-orange-500 to-orange-800 py-3 px-4 mx-3 rounded-md"
+        >
+          Get Started
+        </a>
+        <a href="/jirds.pdf" target="_blank" className="py-3 px-4 mx-3 rounded-md border">
+          Brochure
+        </a>
+      </div>
+      <div className="flex mt-10 justify-center">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/kpG1xym60oA?si=NWVuddg-WoY7p6cQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
     </div>
   );
 };
 
-export default VimeoVideo;
+export default HeroSection;

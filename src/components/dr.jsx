@@ -10,11 +10,14 @@ import Img7 from '../assets/dr/ok7.jpg';
 import Img8 from '../assets/dr/ok8.jpg';
 import Img9 from '../assets/dr/ok9.jpg';
 import Img10 from '../assets/dr/ok10.jpg';
-import Img11 from '../assets/dr/ok11.jpg';
 import Img12 from '../assets/dr/ok12.jpg';
 import Img13 from '../assets/dr/ok13.jpg';
 import Img14 from '../assets/dr/ok14.jpg';
 import Img15 from '../assets/dr/ok15.jpg';
+import Img16 from '../assets/dr/ok16.jpg';
+import Img17 from '../assets/dr/ok17.jpg';
+import Img18 from '../assets/dr/ok18.jpg';
+import Img19 from '../assets/dr/ok19.jpg';
 
 const Section = () => {
     const form = useRef();
@@ -125,6 +128,10 @@ const Section = () => {
     <img className="w-full h-[200px] object-cover mt-4 lg:mt-10 rounded-lg" src={Img12} alt="office content 12" />
     <img className="w-full h-[200px] object-cover rounded-lg" src={Img13} alt="office content 13" />
     <img className="w-full h-[200px] object-cover mt-4 lg:mt-10 rounded-lg" src={Img14} alt="office content 13" />
+    <img className="w-full h-[200px] object-cover rounded-lg" src={Img16} alt="office content 13" />
+    <img className="w-full h-[200px] object-cover mt-4 lg:mt-10 rounded-lg" src={Img17} alt="office content 13" />
+    <img className="w-full h-[200px] object-cover rounded-lg" src={Img18} alt="office content 13" />
+    <img className="w-full h-[200px] object-cover mt-4 lg:mt-10 rounded-lg" src={Img19} alt="office content 13" />
   </div>
                 </div>
             </section>
