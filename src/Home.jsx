@@ -8,7 +8,7 @@ import Testimonials from "./components/Testimonials";
 const Home = () => {
   return (
     <>
-      <div className="max-w-7xl mx-auto pt-20 px-6">
+      <div className="max-w-7xl mx-auto pt-5 px-6">
         <HeroSection />
         <FeatureSection />
         <Testimonials />        

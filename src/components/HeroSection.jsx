@@ -2,14 +2,14 @@ import React from 'react';
 
 const HeroSection = () => {
   return (
-    <div className="flex flex-col items-center mt-6 lg:mt-20">
-      <h1 className="text-orange-800 text-4xl sm:text-6xl lg:text-7xl text-center tracking-wide">
+    <div className="flex flex-col items-center mt-0">
+      <h1 className="text-orange-800 text-6xl sm:text-7xl lg:text-7xl text-center mt-0">
         JIRDS
-        <span className="bg-gradient-to-r from-blue-500 to-cyan-800 text-transparent bg-clip-text">
-          {" "} <br />
+        <span className="bg-gradient-to-r from-blue-500 to-cyan-800 text-transparent bg-clip-text block mt-2">
           Janani Institute For Research & Rehabilitation Development Society
         </span>
       </h1>
+
       <p className="mt-10 text-lg text-center text-amber-800 max-w-4xl">
         Janani Child Development Center is a comprehensive
         multi-service place that provides educational, therapeutic, 
@@ -29,9 +29,13 @@ const HeroSection = () => {
         <a href="/jirds.pdf" target="_blank" className="py-3 px-4 mx-3 rounded-md border">
           Brochure
         </a>
+
+        
       </div>
+      <img src="/banner.png" alt="banner" className="w-full h-full" /> {/* Adjust width as needed */}
+
       <div className="flex mt-10 justify-center">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/kpG1xym60oA?si=NWVuddg-WoY7p6cQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/kpG1xym60oA?si=NWVuddg-WoY7p6cQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
     </div>
   );

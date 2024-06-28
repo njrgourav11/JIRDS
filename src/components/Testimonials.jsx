@@ -16,12 +16,12 @@ const Testimonials = () => {
               <div className="flex-grow">
                 <p>{testimonial.text}</p>
               </div>
-              <div className="flex items-start">
+              {/* <div className="flex items-start">
                 <img
                   className="w-12 h-12 mr-6 rounded-full border border-neutral-300"
                   src={testimonial.image}
                   alt=""
-                />
+                /> */}
                 <div>
                   <h6>{testimonial.user}</h6>
                   <span className="text-sm font-normal italic text-neutral-600">
@@ -30,7 +30,7 @@ const Testimonials = () => {
                 </div>
               </div>
             </div>
-          </div>
+          
         ))}
       </div>
     </div>
