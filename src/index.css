@@ -7,6 +7,6 @@
 :root {
   font-family: "Poppins", sans-serif;
   color-scheme: light;
-  background-color: white; /* Equivalent to cyan-400 in Tailwind CSS */
+  background-color: white; 
 }
 
