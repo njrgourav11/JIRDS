@@ -183,7 +183,7 @@ const ContactSection = () => {
             Send Message
           </button>
         </form>
-        <p className="mt-4 text-sm text-white">{status}</p>
+        <p className="mt-4 text-sm text-black">{status}</p>
         </div>
       </div>
     </div>

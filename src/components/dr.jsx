@@ -1,5 +1,4 @@
-import React, { useRef } from 'react';
-import emailjs from 'emailjs-com';
+import React, { useRef, useState } from 'react';
 import Img1 from '../assets/dr/ok1.jpg';
 import Img2 from '../assets/dr/ok2.jpg';
 import Img3 from '../assets/dr/ok3.jpg';
@@ -20,21 +19,40 @@ import Img18 from '../assets/dr/ok18.jpg';
 import Img19 from '../assets/dr/ok19.jpg';
 
 const Section = () => {
-    const form = useRef();
+  const form = useRef();
+  const [status, setStatus] = useState('');
 
-    const sendEmail = (e) => {
-        e.preventDefault();
-        emailjs.sendForm('service_52a5i4o', 'template_9gbu1cs', form.current, 'VFUDI7HBspB1bzmya')
-            .then((result) => {
-                console.log(result.text);
-                alert('Message sent successfully!');
-            }, (error) => {
-                console.log(error.text);
-                alert('Failed to send message, please try again.');
-            });
+  const sendEmail = async (e) => {
+    e.preventDefault();
 
-        e.target.reset();
-    };
+    const formData = new FormData(form.current);
+    const accessKey = 'f774e88e-b36f-4eec-a9d6-6875472f946d'; // Replace with your Web3Forms access key
+
+    const response = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      body: JSON.stringify({
+        access_key: accessKey,
+        name: formData.get('name'),
+        email: formData.get('email'),
+        number: formData.get('number'),
+        subject: formData.get('subject'),
+        date: formData.get('Date'),
+        time: formData.get('Time'),
+        address: formData.get('address'),
+        message: formData.get('message'),
+      }),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    });
+
+    if (response.ok) {
+      setStatus('Message sent successfully!');
+      form.current.reset();
+    } else {
+      setStatus('Failed to send the message. Please try again later.');
+    }
+  };
 
     return (
         <div className="text-center">
@@ -207,70 +225,70 @@ const Section = () => {
             Fill out the form below and we will get back to you soon.
           </p>
           <form ref={form} onSubmit={sendEmail} className="flex flex-col space-y-4">
-            <div className="grid lg:grid-cols-2 gap-4">
-              <input
-                type="text"
-                name="name"
-                placeholder="Full Name"
-                className="px-3 py-2 text-[#011c2b] bg-gray-200 rounded-md border border-gray-300 focus:outline-none focus:ring focus:ring-blue-500"
-                required
-              />
-              <input
-                type="email"
-                name="email"
-                placeholder="Email Address"
-                className="px-3 py-2 text-[#011c2b] bg-gray-200 rounded-md border border-gray-300 focus:outline-none focus:ring focus:ring-blue-500"
-                required
-              />
-              <input
-                type="tel"
-                name="number"
-                placeholder="Phone Number"
-                className="px-10 py-2 text-[#011c2b] bg-gray-200 rounded-md border border-gray-300 focus:outline-none focus:ring focus:ring-blue-500 mr-3 mb-2"
-                />
-                <select
-    name="subject"
-    className="px-10 py-2 text-[#011c2b] bg-gray-200 rounded-md border border-gray-300 focus:outline-none focus:ring focus:ring-blue-500"
-  >
-    <option value="">Select a subject</option>
-    <option value="1:1 Consulatation">1:1 Consulatation</option>
-  </select>
-              <input
-                type="date"
-                name="Date"
-                placeholder="Date"
-                className="px-3 py-2 text-[#011c2b] bg-gray-200 rounded-md border border-gray-300 focus:outline-none focus:ring focus:ring-blue-500"
-                required
-              />
-              <input
-                type="time"
-                name="Time"
-                placeholder="Time"
-                className="px-3 py-2 text-[#011c2b] bg-gray-200 rounded-md border border-gray-300 focus:outline-none focus:ring focus:ring-blue-500"
-                required
-              />
-            </div>
+          <div className="grid lg:grid-cols-2 gap-4">
             <input
               type="text"
-              name="address"
-              placeholder="Address"
+              name="name"
+              placeholder="Full Name"
               className="px-3 py-2 text-[#011c2b] bg-gray-200 rounded-md border border-gray-300 focus:outline-none focus:ring focus:ring-blue-500"
               required
             />
-            <textarea
-              name="message"
-              rows="5"
-              placeholder="Message"
+            <input
+              type="email"
+              name="email"
+              placeholder="Email Address"
               className="px-3 py-2 text-[#011c2b] bg-gray-200 rounded-md border border-gray-300 focus:outline-none focus:ring focus:ring-blue-500"
               required
-            ></textarea>
-            <button
-              type="submit"
-              className="bg-[#0651ed] text-white px-6 py-2 rounded-md font-bold hover:bg-[#034acb] focus:outline-none focus:ring focus:ring-blue-500"
+            />
+            <input
+              type="tel"
+              name="number"
+              placeholder="Phone Number"
+              className="px-10 py-2 text-[#011c2b] bg-gray-200 rounded-md border border-gray-300 focus:outline-none focus:ring focus:ring-blue-500"
+            />
+            <select
+              name="subject"
+              className="px-10 py-2 text-[#011c2b] bg-gray-200 rounded-md border border-gray-300 focus:outline-none focus:ring focus:ring-blue-500"
             >
-              Send Message
-            </button>
-          </form>
+              <option value="Consultation">1:1 Consultation</option>
+            </select>
+            <input
+              type="date"
+              name="Date"
+              placeholder="Date"
+              className="px-3 py-2 text-[#011c2b] bg-gray-200 rounded-md border border-gray-300 focus:outline-none focus:ring focus:ring-blue-500"
+              required
+            />
+            <input
+              type="time"
+              name="Time"
+              placeholder="Time"
+              className="px-3 py-2 text-[#011c2b] bg-gray-200 rounded-md border border-gray-300 focus:outline-none focus:ring focus:ring-blue-500"
+              required
+            />
+          </div>
+          <input
+            type="text"
+            name="address"
+            placeholder="Address"
+            className="px-3 py-2 text-[#011c2b] bg-gray-200 rounded-md border border-gray-300 focus:outline-none focus:ring focus:ring-blue-500"
+            required
+          />
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Message"
+            className="px-3 py-2 text-[#011c2b] bg-gray-200 rounded-md border border-gray-300 focus:outline-none focus:ring focus:ring-blue-500"
+            required
+          ></textarea>
+          <button
+            type="submit"
+            className="bg-[#0651ed] text-white px-6 py-2 rounded-md font-bold hover:bg-[#034acb] focus:outline-none focus:ring focus:ring-blue-500"
+          >
+            Send Message
+          </button>
+        </form>
+        <p className="mt-4 text-sm text-black">{status}</p>
         </div>
       </div>
     </section>
