@@ -5,11 +5,12 @@ const HeroSection = () => {
     <div className="flex flex-col items-center mt-0 overflow-hidden">
       <h1 className="text-orange-800 text-6xl sm:text-7xl lg:text-7xl text-center mt-0">
         JIRDS
-        <span className="block mt-2 text-center text-5xl sm:text-5xl md:text-6xl lg:text-7xl">
-          <span className="bg-gradient-to-r from-blue-500 to-cyan-800 text-transparent bg-clip-text">
-            Janani Institute For Research & Rehabilitation Development Society
-          </span>
-        </span>
+        <span className="block mt-2 px-2 sm:px-4 text-center text-3xl sm:text-5xl md:text-6xl lg:text-7xl">
+  <span className="bg-gradient-to-r from-blue-500 to-cyan-800 text-transparent bg-clip-text">
+    Janani Institute For Research & Rehabilitation Development Society
+  </span>
+</span>
+
       </h1>
 
       <p className="mt-10 text-lg text-center text-amber-800 max-w-4xl">

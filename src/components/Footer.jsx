@@ -1,9 +1,10 @@
 import React from 'react';
+
 export const Footer = () => {
   return (
     <div>
       <hr className="border-yellow-400 my-2 mx-auto w-20" />
-      <div className="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+      <div className="px-4 pt-16 mx-auto max-w-screen-xl md:px-24 lg:px-8">
         <div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
           <div className="sm:col-span-2">
             <a
@@ -19,20 +20,18 @@ export const Footer = () => {
             </a>
             <div className="mt-6 lg:max-w-sm">
               <p className="text-sm text-black">
-                JIRDS is a Comprehensive
-                multi service place that provides educational, therapeutic
-                and recreational services for children with special needs for
-                fostering their physical, educational, emotional and social
-                development and thus enabling them to play, learn, live and
-                function in the real world by encouraging them to realize
-                their true potential.
+                JIRDS is a Comprehensive multi-service place that provides
+                educational, therapeutic and recreational services for children
+                with special needs, fostering their physical, educational,
+                emotional, and social development, thus enabling them to play,
+                learn, live, and function in the real world by encouraging them
+                to realize their true potential.
               </p>
               <p className="mt-4 text-sm text-black">
                 Our objective is to provide quality education, functional skill
-                programme that will enable the children
-                to realize their optimal potential in academics, development
-                of various skills socio - emotional functions and independent
-                living.
+                programs that will enable the children to realize their optimal
+                potential in academics, development of various skills,
+                socio-emotional functions, and independent living.
               </p>
             </div>
           </div>
@@ -49,7 +48,7 @@ export const Footer = () => {
                 title="Payment Page"
                 className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
               >
-               <u> Payment Page </u>
+                <u> Payment Page </u>
               </a>
             </div>
             <div className="flex">
@@ -60,7 +59,7 @@ export const Footer = () => {
                 title="Our phone"
                 className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
               >
-               <u> 9948199920,21 </u>
+                <u> 9948199920,21 </u>
               </a>
             </div>
             <div className="flex">
@@ -71,7 +70,7 @@ export const Footer = () => {
                 title="Our phone"
                 className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
               >
-               <u> 7780392868 </u>
+                <u> 7780392868 </u>
               </a>
             </div>
             <div className="flex">
@@ -82,7 +81,7 @@ export const Footer = () => {
                 title="Our email"
                 className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
               >
-               <u> jananichilddevelopment <br /> center@gmail.com </u>
+                <u> jananichilddevelopment <br /> center@gmail.com </u>
               </a>
             </div>
             <div className="flex">
@@ -95,9 +94,8 @@ export const Footer = () => {
                 title="Our address"
                 className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
               >
-               <u> 2nd Floor, Gopala Nilayam,
-                Beside Korukonda Coaching Center,
-                Mayuri Nagar, Miyapur, Hyd- 049. </u>
+                <u> 2nd Floor, Gopala Nilayam, Beside Korukonda Coaching Center,
+                  Mayuri Nagar, Miyapur, Hyd- 049. </u>
               </a>
             </div>
           </div>
@@ -106,31 +104,57 @@ export const Footer = () => {
               Social
             </span>
             <div className="flex items-center mt-1 space-x-3">
-              <a href="https://www.youtube.com/@jananichilddevelopmentcent3348" target="_blank">
-                <button class="w-10 h-10 flex items-center relative overflow-hidden justify-center rounded-full bg-white shadow-md shadow-gray-200 group transition-all duration-300">
-                  <svg class="fill-gray-900 relative z-10 transition-all duration-300 group-hover:fill-white"
-                    xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 72 72" fill="none">
+              <a
+                href="https://www.youtube.com/@jananichilddevelopmentcent3348"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="w-10 h-10 flex items-center relative overflow-hidden justify-center rounded-full bg-white shadow-md shadow-gray-200 group transition-all duration-300">
+                  <svg
+                    className="fill-gray-900 relative z-10 transition-all duration-300 group-hover:fill-white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    viewBox="0 0 72 72"
+                    fill="none"
+                  >
                     <path
                       d="M61.1026 23.7185C60.5048 21.471 58.7363 19.6981 56.4863 19.0904C52.4181 18 36.0951 18 36.0951 18C36.0951 18 19.7805 18 15.7039 19.0904C13.4622 19.6897 11.6937 21.4627 11.0876 23.7185C10 27.7971 10 36.3124 10 36.3124C10 36.3124 10 44.8276 11.0876 48.9063C11.6854 51.1537 13.4539 52.9267 15.7039 53.5343C19.7805 54.6247 36.0951 54.6247 36.0951 54.6247C36.0951 54.6247 52.4181 54.6247 56.4863 53.5343C58.728 52.935 60.4965 51.162 61.1026 48.9063C62.1902 44.8276 62.1902 36.3124 62.1902 36.3124C62.1902 36.3124 62.1902 27.7971 61.1026 23.7185Z"
-                      fill="" />
-                    <path class="fill-white transition-all duration-300 group-hover:fill-[#FF3000]"
-                      d="M30.8811 44.1617L44.4392 36.3124L30.8811 28.463V44.1617Z" fill="white" />
+                      fill=""
+                    />
+                    <path
+                      className="fill-white transition-all duration-300 group-hover:fill-[#FF3000]"
+                      d="M30.8811 44.1617L44.4392 36.3124L30.8811 28.463V44.1617Z"
+                      fill="white"
+                    />
                   </svg>
-                  <div class="absolute top-full left-0 w-full h-full rounded-full bg-[#FF3000] z-0 transition-all duration-500 group-hover:top-0"></div>
+                  <div className="absolute top-full left-0 w-full h-full rounded-full bg-[#FF3000] z-0 transition-all duration-500 group-hover:top-0"></div>
                 </button>
               </a>
-              <a href="https://www.facebook.com/profile.php?id=100067097294056&mibextid=ZbWKwL" target="_blank">
-                <button class="w-10 h-10 flex items-center justify-center relative overflow-hidden rounded-full bg-white shadow-md shadow-gray-200 group transition-all duration-300">
-                  <svg class="relative z-10 fill-gray-900 transition-all duration-300 group-hover:fill-white" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 72 72" fill="none">
+              <a
+                href="https://www.facebook.com/profile.php?id=100067097294056&mibextid=ZbWKwL"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="w-10 h-10 flex items-center justify-center relative overflow-hidden rounded-full bg-white shadow-md shadow-gray-200 group transition-all duration-300">
+                  <svg
+                    className="relative z-10 fill-gray-900 transition-all duration-300 group-hover:fill-white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 72 72"
+                    fill="none"
+                  >
                     <path
                       d="M46.4927 38.6403L47.7973 30.3588H39.7611V24.9759C39.7611 22.7114 40.883 20.4987 44.4706 20.4987H48.1756V13.4465C46.018 13.1028 43.8378 12.9168 41.6527 12.8901C35.0385 12.8901 30.7204 16.8626 30.7204 24.0442V30.3588H23.3887V38.6403H30.7204V58.671H39.7611V38.6403H46.4927Z"
-                      fill="" />
+                      fill=""
+                    />
                   </svg>
-                  <div class="absolute top-full left-0 w-full h-full rounded-full bg-blue-500 z-0 transition-all duration-500 group-hover:top-0"> </div>
+                  <div className="absolute top-full left-0 w-full h-full rounded-full bg-blue-500 z-0 transition-all duration-500 group-hover:top-0"></div>
                 </button>
               </a>
 
-              <a href="" target="_blank">
+              <a href="https://www.instagram.com/janani_cdc?igsh=enh3MGJvazI1NWt6" target="_blank">
                 <button class="w-10 h-10 flex items-center justify-center rounded-full relative overflow-hidden bg-white shadow-md shadow-gray-200 group transition-all duration-500">
                   <svg class="fill-gray-900 relative z-10 transition-all duration-500 group-hover:fill-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 51 51" fill="none">
                     <path
